@@ -1,0 +1,14 @@
+<div>
+    <input id="input">
+    <button onclick="speak()">Speak</button>
+</div>
+
+<script>
+
+
+    function speak(){
+        var text=document.getElementById("input").value;
+        var utter=new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(utter);
+    }
+</script>
